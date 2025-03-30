@@ -67,8 +67,3 @@ docker run -d --name 2048-game -p 80:80 2048-game
 - If using Linux, run Docker commands with `sudo` if permission issues occur.
 
 ---
-
-## 📝 License
-
-This project is open-source and available under the MIT License.
-
