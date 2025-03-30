@@ -1,58 +1,42 @@
-2048 Game - Docker Deployment
+2048 Game Deployment Using Docker
 
-📜 Project Description
+Project Overview
 
-This project demonstrates how to run the popular 2048 game using Docker. The game runs on an Nginx server containerized using Docker, providing a seamless deployment experience.
+This project demonstrates how to deploy the 2048 Game using Docker. The setup includes pulling the 2048 game repository, building a Docker image, and running the container.
 
-🛠 Prerequisites
+Prerequisites
 
-Ensure you have the following installed on your system:
+Docker installed on your system (for Windows, Docker Desktop is required)
 
-Docker (latest version)
+Git installed
 
-Git
+Steps to Deploy the 2048 Game
 
-🚀 Getting Started
-
-Follow these steps to clone the repository, build, and run the container:
-
-Step 1: Clone the Repository
+1. Clone the Repository
 
 git clone https://github.com/KisanthS/2048-Game.git
 cd 2048-Game
 
-Step 2: Load the Docker Image (If .tar File is Available)
+2. Load the Docker Image
+
+If you already have the Docker image tar file:
 
 docker load -i 2048-game.tar
 
-Step 3: Build the Docker Image (If Dockerfile is Available)
-
-docker build -t 2048-game .
-
-Step 4: Run the Container
+3. Run the Docker Container
 
 docker run -d --name 2048-game -p 80:80 2048-game
 
-Step 5: Access the Game
+4. Access the Game
 
-Open a browser and go to: http://localhost
+Open your browser and go to:
 
-🐳 Docker Commands for Management
+http://localhost:80
 
-Stop Container: docker stop 2048-game
+You should see the 2048 game running!
 
-Start Container: docker start 2048-game
+Troubleshooting
 
-Remove Container: docker rm -f 2048-game
+Ensure Docker is running on your system.
 
-Remove Image: docker rmi 2048-game
-
-💡 Troubleshooting
-
-Ensure Docker is running.
-
-Check for port conflicts on port 80.
-
-Restart Docker if necessary.
-
-If using Linux, run Docker commands with sudo if permission issues occur.
+If you encounter errors, try running commands with admin/root permissions
