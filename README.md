@@ -44,15 +44,6 @@ docker run -d --name 2048-game -p 80:80 2048-game
 
 ---
 
-## 🐳 Docker Commands for Management
-
-- Stop Container: `docker stop 2048-game`
-- Start Container: `docker start 2048-game`
-- Remove Container: `docker rm -f 2048-game`
-- Remove Image: `docker rmi 2048-game`
-
----
-
 ## 💡 Troubleshooting
 
 - Ensure Docker is running.
