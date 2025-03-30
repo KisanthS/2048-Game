@@ -32,19 +32,13 @@ cd 2048-Game
 docker load -i 2048-game.tar
 ```
 
-### Step 3: Build the Docker Image (If Dockerfile is Available)
-
-```bash
-docker build -t 2048-game .
-```
-
-### Step 4: Run the Container
+### Step 3: Run the Container
 
 ```bash
 docker run -d --name 2048-game -p 80:80 2048-game
 ```
 
-### Step 5: Access the Game
+### Step 4: Access the Game
 
 - Open a browser and go to: [http://localhost](http://localhost)
 
